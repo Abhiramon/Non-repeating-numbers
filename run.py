@@ -1,7 +1,12 @@
 #Check with test cases
 
 def run():
-	num=create_num_array(input())
+	num=input()
+	num=str(num)
+	while(len(num)>1 and num[0]=='0'):
+		num=num[1:]
+	num=int(num)
+	num=create_num_array(num)
 	return get_next_repfree(num)	
 
 def create_num_array(number):
