@@ -1,7 +1,5 @@
-#Check with test cases
-
 def run():
-	num=input()
+	num=input()+1  # Since the number has to be greater than given input
 	num=str(num)
 	while(len(num)>1 and num[0]=='0'):
 		num=num[1:]
@@ -18,6 +16,7 @@ def create_num_array(number):
 	return lst
 
 def convert_to_num(num):
+	#converts array of integers into an integer number
 	number=0
 	num.reverse()
 	for i in range(len(num)):
@@ -34,7 +33,7 @@ def find_rep(num):
 
 
 def minimize(num,index):
-	#return number with part from "index" to end minimized (with digits excluding 0)
+	#return number with part from "index" to end minimized (with digits excluding 0) 
 	digit=1
 	for i in range(index,len(num)):
 		while digit in num[:i]:
