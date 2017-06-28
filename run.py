@@ -1,4 +1,7 @@
+
+
 def run():
+	#Use this fundtion to run the program
 	num=input()+1  # Since the number has to be greater than given input
 	num=str(num)
 	while(len(num)>1 and num[0]=='0'):
